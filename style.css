@@ -1,0 +1,15 @@
+#data-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.item_lista {
+    box-shadow: 5px 3px 10px rgb(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+}
