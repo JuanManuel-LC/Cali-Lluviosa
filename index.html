@@ -8,22 +8,116 @@
         <title>Precipitación</title>
     </head>
     <body>
-        <h1>Registros del Conjunto de Datos</h1>
-        <h2>Nombres de estaciones</h2>
+        <section class="info">
+            <nav>
+                <ul class="lista-nav">
+                    <li class="item-nav"><a href="#">Link 1</a></li>
+                    <img src="src/img/gota.png" alt="logo-gota" width="20px" />
+                    <li class="item-nav"><a href="#">Link 3</a></li>
+                </ul>
+            </nav>
+            <div class="contenido-info">
+                <h1 class="texto-titulo">
+                    Registros de precipitación, caudal y nivel de estaciones de
+                    monitoreo automático de la CVC
+                </h1>
+                <p class="texto-info">
+                    Las estaciones de monitoreo automático de la Corporación
+                    Autónoma Regional del Valle del Cauca (CVC) en Cali
+                    desempeñan un papel crucial en la gestión de los recursos
+                    hídricos y la mitigación de riesgos ambientales. Estos
+                    sistemas automatizados registran en tiempo real parámetros
+                    esenciales como la precipitación, el caudal y el nivel de
+                    los cuerpos de agua. Cada uno de estos parámetros
+                    proporciona información valiosa sobre el comportamiento de
+                    los ríos y otros sistemas hídricos, permitiendo anticipar
+                    fenómenos climáticos extremos, prevenir desbordamientos y
+                    asegurar una respuesta oportuna ante posibles emergencias.
+                    Este monitoreo constante no solo facilita la preservación
+                    del medio ambiente, sino que también protege a las
+                    comunidades y optimiza la gestión de los recursos naturales.
+                </p>
+            </div>
+        </section>
 
-        <!-- Campo para filtrar los registros -->
-        <input
-            type="text"
-            id="filter-input"
-            placeholder="Buscar por nombre de estación..."
-        />
-        <select name="select" id="lista-opciones-filtros">
-            <!-- <option value="">Todos</option> -->
-        </select>
-        <button type="" id="filter-button">Filtrar</button>
-        <button id="limpiar-filtro">Limpiar filtro</button>
-        <ul id="data-list"></ul>
-        <!-- Aquí se mostrarán los registros -->
+        <section class="img-section">
+            <img
+                class="flecha-abajo"
+                src="src/img/flecha-hacia-abajo.png"
+                alt="seguir"
+            />
+        </section>
+
+        <section class="datos-numeros-caja">
+            <h2 class="titulo-numeros">CANTIDAD DE DATOS</h2>
+            <div class="contenido-numeros">
+                <div class="datos-numeros">
+                    <div class="item-estacion item1">
+                        <h2>LA BALSA</h2>
+                        <p>65</p>
+                    </div>
+                    <div class="item-estacion item2">
+                        <h2>CAUCA - LA BALSA</h2>
+                        <p>292</p>
+                    </div>
+                    <div class="item-estacion item3">
+                        <h2>CRUCES</h2>
+                        <p>102</p>
+                    </div>
+                    <div class="item-estacion item4">
+                        <h2>ANACARO</h2>
+                        <p>57</p>
+                    </div>
+                    <div class="item-estacion item5">
+                        <h2>NAVARRO</h2>
+                        <p>81</p>
+                    </div>
+                    <div class="item-estacion item6">
+                        <h2>CAUCA - LA VICTORIA</h2>
+                        <p>238</p>
+                    </div>
+                    <div class="item-estacion item7">
+                        <h2>CAUCA - ANACARO</h2>
+                        <p>238</p>
+                    </div>
+                    <div class="item-estacion item8">
+                        <h2>CAUCA - PAN DE AZUCAR</h2>
+                        <p>250</p>
+                    </div>
+                    <div class="item-estacion item9">
+                        <h2>CAUCA - LA FLORESTA</h2>
+                        <p>128</p>
+                    </div>
+                    <div class="item-estacion item10">
+                        <h2>CAUCA - NAVARRO</h2>
+                        <p>116</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="src/img/Cali-1.png" alt="Monte-Rey-img" />
+                    <img src="src/img/Cali-2.jpg" alt="Rio-cali-img" />
+                </div>
+            </div>
+        </section>
+
+        <section class="datos">
+            <div class="texto-datos">
+                <h2>Registros del Conjunto de Datos</h2>
+
+                <p>Selecciona un filtro para ver los datos</p>
+            </div>
+
+            <div class="botones">
+                <select name="select" id="lista-opciones-filtros">
+                    <!-- <option value="">Todos</option> -->
+                </select>
+                <button type="" id="filter-button">Filtrar</button>
+                <button id="limpiar-filtro">Limpiar filtro</button>
+            </div>
+
+            <ul id="data-list"></ul>
+            <!-- Aquí se mostrarán los registros -->
+        </section>
 
         <script src="app.js"></script>
     </body>
