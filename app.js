@@ -55,7 +55,7 @@ function renderDatos(data) {
                 <p class="fecha-item">Fecha: ${item.fecha} </p> 
                 <p class="codigo-estacion-item">Código Estación: ${item.codigo_estacion}</p> 
                 <p class="coorX-item">Coordenada X: ${item.coordenada_x}</p>  
-                <p class="coorY-item">Coordenada Y: ${item.coordenada_y}</p>  
+                <p id="mitad2" class="coorY-item">Coordenada Y: ${item.coordenada_y}</p>  
                 <p class="parametro-item">Parámetro: ${item.parametro_tipo}</p> 
                 <p class="valor-item">Valor: ${item.valor}</p>
                 <p class="unidad-item">Unidad de Medida: ${item.unidad_de_medida}</p> 
